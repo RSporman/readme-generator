@@ -47,3 +47,14 @@ inquirer.prompt([
 }
 
 ])
+
+function init() {
+    inquirer.prompt(questions)
+    .then((response) => {
+        console.log("Creating README");
+        writeToFile("README.md", generateMarkdown({...response}))
+
+});
+}  
+// function call to initialize program
+init();
