@@ -4,7 +4,7 @@ const fs = require('fs');
 const generateMarkdown = require("./utils/generateMarkdown.js");
 const path = require("path");
 
-inquirer.prompt([
+const questions = [
 {
     type: 'input',
     name: 'repoName',
@@ -46,12 +46,12 @@ inquirer.prompt([
     name: 'appIssuesAndCont',
 }
 
-])
+]
 
 function init() {
     inquirer.prompt(questions)
     .then((response) => {
-        console.log("Creating README");
+        // console.log("Creating README");
         writeToFile("README.md", generateMarkdown({...response}))
 
 });
