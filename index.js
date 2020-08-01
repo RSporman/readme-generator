@@ -4,6 +4,11 @@ const fs = require('fs');
 const generateMarkdown = require("./utils/generateMarkdown.js");
 const path = require("path");
 
+fs.writeFile('README.md', 'Read-me Generator', function (err) {
+    if (err) return console.log(err);
+    console.log('Hello World > helloworld.txt');
+})
+
 const questions = [
 {
     type: 'input',
@@ -52,9 +57,10 @@ function init() {
     inquirer.prompt(questions)
     .then((response) => {
         // console.log("Creating README");
-        writeToFile("README.md", generateMarkdown({...response}))
+        writeFile("README.md", generateMarkdown({...response}))
 
 });
 }  
 // function call to initialize program
 init();
+
