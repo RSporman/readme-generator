@@ -1,14 +1,14 @@
-# Sports
+# Sportsdata
     ## Description
-    Sports Data
+    THis is an app where users will intiutively be able to access sports data and statistics
     ## GitHub Name
     RSporman
     ## Installation
-    Online!
+    the app store
     ## Instructions
-    logs in!
+    Being able to select what they want to search
     ## Issues
-    of course!
+    yes!
     ## Contributers
     undefined
   

@@ -9,7 +9,7 @@ const questions = [
 {
     type: 'input',
     name: 'repoName',
-    message: 'What is name of this application? (This will aslo the main header of the README)',
+    message: 'What is name of this application? (This will also the main header of the README)',
  
 },
 //asks user for git hub user name 
